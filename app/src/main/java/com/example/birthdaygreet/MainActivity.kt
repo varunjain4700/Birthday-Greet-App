@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     fun btn(view: View) {
         val name=input_name.editableText.toString().trim()
-      //  Toast.makeText( this, "hello+$name",Toast.LENGTH_SHORT).show()
+      
         val intent=Intent(this,GreetingCard::class.java)
         intent.putExtra(GreetingCard.name1,name)
         startActivity(intent)
